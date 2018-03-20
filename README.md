@@ -15,9 +15,9 @@ Python 2.7 and 3.4+
 ### pip install
 
 ```sh
-pip install git@github.com:apuzakov/myreceipt-python-client.git
+pip install git+https://github.com/apuzakov/myreceipt-python-client.git
 ```
-(you may need to run `pip` with root permission: `sudo pip install git@github.com:apuzakov/myreceipt-python-client.git`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/apuzakov/myreceipt-python-client.git`)
 
 Then import the package:
 ```python
@@ -43,6 +43,8 @@ import swagger_client
 Please follow the [installation procedure](#installation--usage) and then run the following:
 
 ```python
+# -*- coding: utf-8 -*-
+
 from __future__ import print_function
 import time
 import swagger_client

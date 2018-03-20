@@ -53,7 +53,9 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
 
         # Authentication Settings
         # dict to store API key(s)
-        self.api_key = {}
+        self.api_key = {
+            'X-Auth-Token': ''
+        }
         # dict to store API prefix (e.g. Bearer)
         self.api_key_prefix = {}
         # Username for HTTP basic authentication
