@@ -14,12 +14,10 @@ Python 2.7 and 3.4+
 ## Installation & Usage
 ### pip install
 
-If the python package is hosted on Github, you can install directly from Github
-
 ```sh
-pip install git+https://github.com//.git
+pip install git@github.com:apuzakov/myreceipt-python-client.git
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com//.git`)
+(you may need to run `pip` with root permission: `sudo pip install git@github.com:apuzakov/myreceipt-python-client.git`)
 
 Then import the package:
 ```python
@@ -53,9 +51,7 @@ from pprint import pprint
 
 # Configure API key authorization: token
 swagger_client.configuration.api_key = {'X-Auth-Token': 'YOUR_API_KEY'}
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Auth-Token'] = 'Bearer'
-# create an instance of the API class
+
 api_instance = swagger_client.ReceiptApi()
 request = swagger_client.ReceiptRequest() # ReceiptRequest | Полная информация о чеке
 
