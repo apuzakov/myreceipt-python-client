@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    MyReceipt API
+    Check Sender API
 
-    Описание взаимодействия с сервисом аренды кассовой техники MyReceipt  # noqa: E501
+    Описание взаимодействия с сервисом аренды кассовой техники Check Sender  # noqa: E501
 
     OpenAPI spec version: 1.0
     
@@ -122,6 +122,7 @@ class Receipt(object):
     def items(self):
         """Gets the items of this Receipt.  # noqa: E501
 
+        Позиции в чеке  # noqa: E501
 
         :return: The items of this Receipt.  # noqa: E501
         :rtype: list[ReceiptItems]
@@ -132,6 +133,7 @@ class Receipt(object):
     def items(self, items):
         """Sets the items of this Receipt.
 
+        Позиции в чеке  # noqa: E501
 
         :param items: The items of this Receipt.  # noqa: E501
         :type: list[ReceiptItems]
@@ -166,6 +168,7 @@ class Receipt(object):
     def total(self):
         """Gets the total of this Receipt.  # noqa: E501
 
+        Итоговая сумма чека, коп.  # noqa: E501
 
         :return: The total of this Receipt.  # noqa: E501
         :rtype: float
@@ -176,6 +179,7 @@ class Receipt(object):
     def total(self, total):
         """Sets the total of this Receipt.
 
+        Итоговая сумма чека, коп.  # noqa: E501
 
         :param total: The total of this Receipt.  # noqa: E501
         :type: float

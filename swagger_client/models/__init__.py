@@ -2,9 +2,9 @@
 
 # flake8: noqa
 """
-    MyReceipt API
+    Check Sender API
 
-    Описание взаимодействия с сервисом аренды кассовой техники MyReceipt  # noqa: E501
+    Описание взаимодействия с сервисом аренды кассовой техники Check Sender  # noqa: E501
 
     OpenAPI spec version: 1.0
     
@@ -19,7 +19,7 @@ from swagger_client.models.device_status_response import DeviceStatusResponse
 from swagger_client.models.receipt import Receipt
 from swagger_client.models.receipt_client import ReceiptClient
 from swagger_client.models.receipt_items import ReceiptItems
-from swagger_client.models.receipt_request import ReceiptRequest
 from swagger_client.models.receipt_response import ReceiptResponse
 from swagger_client.models.tax import Tax
 from swagger_client.models.taxes import Taxes
+from swagger_client.models.receipt_request import ReceiptRequest

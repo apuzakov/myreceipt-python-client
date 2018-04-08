@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    MyReceipt API
+    Check Sender API
 
-    Описание взаимодействия с сервисом аренды кассовой техники MyReceipt  # noqa: E501
+    Описание взаимодействия с сервисом аренды кассовой техники Check Sender  # noqa: E501
 
     OpenAPI spec version: 1.0
     
@@ -36,14 +36,159 @@ class ReceiptRequest(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'type': 'str',
+        'client': 'ReceiptClient',
+        'items': 'list[ReceiptItems]',
+        'taxes': 'Taxes',
+        'total': 'float'
     }
 
     attribute_map = {
+        'type': 'type',
+        'client': 'client',
+        'items': 'items',
+        'taxes': 'taxes',
+        'total': 'total'
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self, type=None, client=None, items=None, taxes=None, total=None):  # noqa: E501
         """ReceiptRequest - a model defined in Swagger"""  # noqa: E501
+
+        self._type = None
+        self._client = None
+        self._items = None
+        self._taxes = None
+        self._total = None
         self.discriminator = None
+
+        if type is not None:
+            self.type = type
+        self.client = client
+        self.items = items
+        if taxes is not None:
+            self.taxes = taxes
+        self.total = total
+
+    @property
+    def type(self):
+        """Gets the type of this ReceiptRequest.  # noqa: E501
+
+
+        :return: The type of this ReceiptRequest.  # noqa: E501
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ReceiptRequest.
+
+
+        :param type: The type of this ReceiptRequest.  # noqa: E501
+        :type: str
+        """
+        allowed_values = ["sell", "buy", "refund_buy", "refund_sell"]  # noqa: E501
+        if type not in allowed_values:
+            raise ValueError(
+                "Invalid value for `type` ({0}), must be one of {1}"  # noqa: E501
+                .format(type, allowed_values)
+            )
+
+        self._type = type
+
+    @property
+    def client(self):
+        """Gets the client of this ReceiptRequest.  # noqa: E501
+
+
+        :return: The client of this ReceiptRequest.  # noqa: E501
+        :rtype: ReceiptClient
+        """
+        return self._client
+
+    @client.setter
+    def client(self, client):
+        """Sets the client of this ReceiptRequest.
+
+
+        :param client: The client of this ReceiptRequest.  # noqa: E501
+        :type: ReceiptClient
+        """
+        if client is None:
+            raise ValueError("Invalid value for `client`, must not be `None`")  # noqa: E501
+
+        self._client = client
+
+    @property
+    def items(self):
+        """Gets the items of this ReceiptRequest.  # noqa: E501
+
+        Позиции в чеке  # noqa: E501
+
+        :return: The items of this ReceiptRequest.  # noqa: E501
+        :rtype: list[ReceiptItems]
+        """
+        return self._items
+
+    @items.setter
+    def items(self, items):
+        """Sets the items of this ReceiptRequest.
+
+        Позиции в чеке  # noqa: E501
+
+        :param items: The items of this ReceiptRequest.  # noqa: E501
+        :type: list[ReceiptItems]
+        """
+        if items is None:
+            raise ValueError("Invalid value for `items`, must not be `None`")  # noqa: E501
+
+        self._items = items
+
+    @property
+    def taxes(self):
+        """Gets the taxes of this ReceiptRequest.  # noqa: E501
+
+
+        :return: The taxes of this ReceiptRequest.  # noqa: E501
+        :rtype: Taxes
+        """
+        return self._taxes
+
+    @taxes.setter
+    def taxes(self, taxes):
+        """Sets the taxes of this ReceiptRequest.
+
+
+        :param taxes: The taxes of this ReceiptRequest.  # noqa: E501
+        :type: Taxes
+        """
+
+        self._taxes = taxes
+
+    @property
+    def total(self):
+        """Gets the total of this ReceiptRequest.  # noqa: E501
+
+        Итоговая сумма чека, коп.  # noqa: E501
+
+        :return: The total of this ReceiptRequest.  # noqa: E501
+        :rtype: float
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ReceiptRequest.
+
+        Итоговая сумма чека, коп.  # noqa: E501
+
+        :param total: The total of this ReceiptRequest.  # noqa: E501
+        :type: float
+        """
+        if total is None:
+            raise ValueError("Invalid value for `total`, must not be `None`")  # noqa: E501
+
+        self._total = total
 
     def to_dict(self):
         """Returns the model properties as a dict"""

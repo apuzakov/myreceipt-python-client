@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **str** |  | 
-**price** | **float** |  | 
-**quantity** | **float** |  | 
-**sum** | **float** |  | 
-**tax** | [**Tax**](Tax.md) |  | [optional] 
+**name** | **str** | Номенклатура | 
+**price** | **float** | Цена, коп. | 
+**quantity** | **float** | Кол-во | 
+**sum** | **float** | Сумма | 
+**tax** | [**Tax**](Tax.md) | Налог | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

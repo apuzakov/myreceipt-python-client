@@ -1,6 +1,6 @@
 # swagger_client.ReceiptApi
 
-All URIs are relative to *https://api.myreceipt.tk*
+All URIs are relative to *https://api.check-sender.ru*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

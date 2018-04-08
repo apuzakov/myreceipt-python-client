@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    MyReceipt API
+    Check Sender API
 
-    Описание взаимодействия с сервисом аренды кассовой техники MyReceipt  # noqa: E501
+    Описание взаимодействия с сервисом аренды кассовой техники Check Sender  # noqa: E501
 
     OpenAPI spec version: 1.0
     
@@ -32,28 +32,23 @@ class ReceiptResponse(object):
     """
     swagger_types = {
         'code': 'int',
-        'type': 'str',
         'message': 'str'
     }
 
     attribute_map = {
         'code': 'code',
-        'type': 'type',
         'message': 'message'
     }
 
-    def __init__(self, code=None, type=None, message=None):  # noqa: E501
+    def __init__(self, code=None, message=None):  # noqa: E501
         """ReceiptResponse - a model defined in Swagger"""  # noqa: E501
 
         self._code = None
-        self._type = None
         self._message = None
         self.discriminator = None
 
         if code is not None:
             self.code = code
-        if type is not None:
-            self.type = type
         if message is not None:
             self.message = message
 
@@ -77,27 +72,6 @@ class ReceiptResponse(object):
         """
 
         self._code = code
-
-    @property
-    def type(self):
-        """Gets the type of this ReceiptResponse.  # noqa: E501
-
-
-        :return: The type of this ReceiptResponse.  # noqa: E501
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this ReceiptResponse.
-
-
-        :param type: The type of this ReceiptResponse.  # noqa: E501
-        :type: str
-        """
-
-        self._type = type
 
     @property
     def message(self):

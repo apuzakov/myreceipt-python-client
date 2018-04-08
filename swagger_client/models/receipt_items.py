@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    MyReceipt API
+    Check Sender API
 
-    Описание взаимодействия с сервисом аренды кассовой техники MyReceipt  # noqa: E501
+    Описание взаимодействия с сервисом аренды кассовой техники Check Sender  # noqa: E501
 
     OpenAPI spec version: 1.0
     
@@ -69,6 +69,7 @@ class ReceiptItems(object):
     def name(self):
         """Gets the name of this ReceiptItems.  # noqa: E501
 
+        Номенклатура  # noqa: E501
 
         :return: The name of this ReceiptItems.  # noqa: E501
         :rtype: str
@@ -79,6 +80,7 @@ class ReceiptItems(object):
     def name(self, name):
         """Sets the name of this ReceiptItems.
 
+        Номенклатура  # noqa: E501
 
         :param name: The name of this ReceiptItems.  # noqa: E501
         :type: str
@@ -92,6 +94,7 @@ class ReceiptItems(object):
     def price(self):
         """Gets the price of this ReceiptItems.  # noqa: E501
 
+        Цена, коп.  # noqa: E501
 
         :return: The price of this ReceiptItems.  # noqa: E501
         :rtype: float
@@ -102,6 +105,7 @@ class ReceiptItems(object):
     def price(self, price):
         """Sets the price of this ReceiptItems.
 
+        Цена, коп.  # noqa: E501
 
         :param price: The price of this ReceiptItems.  # noqa: E501
         :type: float
@@ -115,6 +119,7 @@ class ReceiptItems(object):
     def quantity(self):
         """Gets the quantity of this ReceiptItems.  # noqa: E501
 
+        Кол-во  # noqa: E501
 
         :return: The quantity of this ReceiptItems.  # noqa: E501
         :rtype: float
@@ -125,6 +130,7 @@ class ReceiptItems(object):
     def quantity(self, quantity):
         """Sets the quantity of this ReceiptItems.
 
+        Кол-во  # noqa: E501
 
         :param quantity: The quantity of this ReceiptItems.  # noqa: E501
         :type: float
@@ -138,6 +144,7 @@ class ReceiptItems(object):
     def sum(self):
         """Gets the sum of this ReceiptItems.  # noqa: E501
 
+        Сумма  # noqa: E501
 
         :return: The sum of this ReceiptItems.  # noqa: E501
         :rtype: float
@@ -148,6 +155,7 @@ class ReceiptItems(object):
     def sum(self, sum):
         """Sets the sum of this ReceiptItems.
 
+        Сумма  # noqa: E501
 
         :param sum: The sum of this ReceiptItems.  # noqa: E501
         :type: float
@@ -161,6 +169,7 @@ class ReceiptItems(object):
     def tax(self):
         """Gets the tax of this ReceiptItems.  # noqa: E501
 
+        Налог  # noqa: E501
 
         :return: The tax of this ReceiptItems.  # noqa: E501
         :rtype: Tax
@@ -171,6 +180,7 @@ class ReceiptItems(object):
     def tax(self, tax):
         """Sets the tax of this ReceiptItems.
 
+        Налог  # noqa: E501
 
         :param tax: The tax of this ReceiptItems.  # noqa: E501
         :type: Tax
