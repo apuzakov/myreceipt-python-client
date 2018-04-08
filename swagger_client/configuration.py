@@ -47,15 +47,13 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
     def __init__(self):
         """Constructor"""
         # Default Base url
-        self.host = "https://api.myreceipt.tk"
+        self.host = "https://api.check-sender.ru"
         # Temp file folder for downloading files
         self.temp_folder_path = None
 
         # Authentication Settings
         # dict to store API key(s)
-        self.api_key = {
-            'X-Auth-Token': ''
-        }
+        self.api_key = {}
         # dict to store API prefix (e.g. Bearer)
         self.api_key_prefix = {}
         # Username for HTTP basic authentication
