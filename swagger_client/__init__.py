@@ -23,7 +23,9 @@ from swagger_client.api.status_api import StatusApi
 from swagger_client.api_client import ApiClient
 from swagger_client.configuration import Configuration
 # import models into sdk package
+from swagger_client.models.compose_response import ComposeResponse
 from swagger_client.models.device_status_response import DeviceStatusResponse
+from swagger_client.models.error_response import ErrorResponse
 from swagger_client.models.receipt import Receipt
 from swagger_client.models.receipt_client import ReceiptClient
 from swagger_client.models.receipt_items import ReceiptItems

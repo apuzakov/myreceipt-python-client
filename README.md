@@ -78,7 +78,9 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
+ - [ComposeResponse](docs/ComposeResponse.md)
  - [DeviceStatusResponse](docs/DeviceStatusResponse.md)
+ - [ErrorResponse](docs/ErrorResponse.md)
  - [Receipt](docs/Receipt.md)
  - [ReceiptClient](docs/ReceiptClient.md)
  - [ReceiptItems](docs/ReceiptItems.md)

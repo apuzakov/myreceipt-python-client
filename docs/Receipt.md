@@ -3,7 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | **str** |  | [optional] 
+**id** | **str** | Уникальный идентификатор транзакции в системе клиента, для избежания повторной регистрации чека | 
+**type** | **str** |  | 
 **client** | [**ReceiptClient**](ReceiptClient.md) |  | 
 **items** | [**list[ReceiptItems]**](ReceiptItems.md) | Позиции в чеке | 
 **taxes** | [**Taxes**](Taxes.md) |  | [optional] 

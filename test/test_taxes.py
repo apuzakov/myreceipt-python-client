@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    MyReceipt API
+    Check Sender API
 
-    Описание взаимодействия с сервисом аренды кассовой техники MyReceipt  # noqa: E501
+    Описание взаимодействия с сервисом аренды кассовой техники Check Sender  # noqa: E501
 
     OpenAPI spec version: 1.0
     

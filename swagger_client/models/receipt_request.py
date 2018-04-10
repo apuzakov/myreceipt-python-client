@@ -36,6 +36,7 @@ class ReceiptRequest(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'id': 'str',
         'type': 'str',
         'client': 'ReceiptClient',
         'items': 'list[ReceiptItems]',
@@ -44,6 +45,7 @@ class ReceiptRequest(object):
     }
 
     attribute_map = {
+        'id': 'id',
         'type': 'type',
         'client': 'client',
         'items': 'items',
@@ -51,9 +53,10 @@ class ReceiptRequest(object):
         'total': 'total'
     }
 
-    def __init__(self, type=None, client=None, items=None, taxes=None, total=None):  # noqa: E501
+    def __init__(self, id=None, type=None, client=None, items=None, taxes=None, total=None):  # noqa: E501
         """ReceiptRequest - a model defined in Swagger"""  # noqa: E501
 
+        self._id = None
         self._type = None
         self._client = None
         self._items = None
@@ -61,13 +64,38 @@ class ReceiptRequest(object):
         self._total = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
+        self.id = id
+        self.type = type
         self.client = client
         self.items = items
         if taxes is not None:
             self.taxes = taxes
         self.total = total
+
+    @property
+    def id(self):
+        """Gets the id of this ReceiptRequest.  # noqa: E501
+
+        Уникальный идентификатор транзакции в системе клиента, для избежания повторной регистрации чека  # noqa: E501
+
+        :return: The id of this ReceiptRequest.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ReceiptRequest.
+
+        Уникальный идентификатор транзакции в системе клиента, для избежания повторной регистрации чека  # noqa: E501
+
+        :param id: The id of this ReceiptRequest.  # noqa: E501
+        :type: str
+        """
+        if id is None:
+            raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
+
+        self._id = id
 
     @property
     def type(self):
@@ -87,6 +115,8 @@ class ReceiptRequest(object):
         :param type: The type of this ReceiptRequest.  # noqa: E501
         :type: str
         """
+        if type is None:
+            raise ValueError("Invalid value for `type`, must not be `None`")  # noqa: E501
         allowed_values = ["sell", "buy", "refund_buy", "refund_sell"]  # noqa: E501
         if type not in allowed_values:
             raise ValueError(

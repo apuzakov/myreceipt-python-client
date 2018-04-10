@@ -15,7 +15,9 @@
 from __future__ import absolute_import
 
 # import models into model package
+from swagger_client.models.compose_response import ComposeResponse
 from swagger_client.models.device_status_response import DeviceStatusResponse
+from swagger_client.models.error_response import ErrorResponse
 from swagger_client.models.receipt import Receipt
 from swagger_client.models.receipt_client import ReceiptClient
 from swagger_client.models.receipt_items import ReceiptItems

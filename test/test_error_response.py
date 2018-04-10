@@ -16,24 +16,23 @@ from __future__ import absolute_import
 import unittest
 
 import swagger_client
-from swagger_client.api.receipt_api import ReceiptApi  # noqa: E501
+from swagger_client.models.error_response import ErrorResponse  # noqa: E501
 from swagger_client.rest import ApiException
 
 
-class TestReceiptApi(unittest.TestCase):
-    """ReceiptApi unit test stubs"""
+class TestErrorResponse(unittest.TestCase):
+    """ErrorResponse unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.receipt_api.ReceiptApi()  # noqa: E501
+        pass
 
     def tearDown(self):
         pass
 
-    def test_receipt_compose(self):
-        """Test case for receipt_compose
-
-        Пробитие чека  # noqa: E501
-        """
+    def testErrorResponse(self):
+        """Test ErrorResponse"""
+        # FIXME: construct object with mandatory attributes with example values
+        # model = swagger_client.models.error_response.ErrorResponse()  # noqa: E501
         pass
 
 
