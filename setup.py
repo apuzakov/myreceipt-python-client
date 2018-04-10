@@ -13,8 +13,8 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "swagger-client"
-VERSION = "1.0.0"
+NAME = "check-sender-client"
+VERSION = "0.0.1"
 # To install the library, run the following
 #
 # python setup.py install
@@ -30,7 +30,7 @@ setup(
     description="Check Sender API",
     author_email="",
     url="",
-    keywords=["Swagger", "Check Sender API"],
+    keywords=["Check Sender API"],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
